@@ -1,6 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 require('dotenv').config()
-mongoose.connect(process.env.NEXT_PUBLIC_MONGO_URI);
+mongoose.connect(process.env.MONGO_URI);
 mongoose.Promise = global.Promise
 
 const ticketSchema = new Schema({
